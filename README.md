@@ -140,6 +140,15 @@ ou
 py main.py
 ```
 
+### Install the service
+
+```
+sudo cp ~/BotTwitter/bot-twitter.service /etc/systemd/system/bot-twitter.service
+sudo systemctl enable bot-twitter.service
+sudo systemctl start bot-twitter.service
+```
+
+
 
 Vous avez une question ? Des idées d'ameliorations ? vous pouvez venir sur notre serveur discord  : [MoneyMakers](https://discord.gg/gjNbrgwRxT)
 On recherche des devs pour continuer à améliorer ce bot et à commencer de nouveaux projets !

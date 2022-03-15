@@ -1,0 +1,16 @@
+[Unit]
+Description=bot-twitter
+After=ssh-agent.service
+
+[Service]
+User=pi
+Group=pi
+Type=simple
+Restart=always
+RestartSec=1
+StartLimitInterval=0
+WorkingDirectory=/home/pi/BotTwitter
+ExecStart=python3 /home/pi/BotTwitter/main.py
+
+[Install]
+WantedBy=multi-user.target
